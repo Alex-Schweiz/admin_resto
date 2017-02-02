@@ -1,0 +1,30 @@
+{
+  "name": "resto_admin",
+  "version": "1.0.0",
+  "description": "Alex Restaurant Admin",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alex-Schweiz/admin_resto.git"
+  },
+  "keywords": [
+    "css",
+    "js",
+    "html",
+    "bootstrap",
+    "theme",
+    "responsive"
+  ],
+  "scripts" : {
+    "postinstall": "gulp && bower install"
+  },
+  "license": "MIT",
+  "author": "Alex Skibinskiy",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-clean-css": "^2.3.2",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-pug": "^3.2.0",
+    "gulp-watch": "^4.3.11"
+  }
+}

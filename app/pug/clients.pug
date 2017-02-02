@@ -1,0 +1,529 @@
+extends layouts/main
+
+block content
+    .container.body
+        .main_container
+            .col-md-3.left_col
+                .left_col.scroll-view
+                    .navbar.nav_title(style='border: 0;')
+                        a.site_title(href='index.html')
+                            i.fa.fa-asterisk
+                            span Resto Admin
+                    .clearfix
+                    // menu profile quick info
+                    .profile
+                        .profile_pic
+                            img.img-circle.profile_img(src='images/img.jpg', alt='...')
+                        .profile_info
+                            span Welcome,
+                            h2 John Doe
+                    br
+                    // sidebar menu
+                    #sidebar-menu.main_menu_side.hidden-print.main_menu
+                        .menu_section
+                            h3 General
+                            ul.nav.side-menu
+                                li
+                                    a(href='index.html')
+                                        i.fa.fa-home
+                                        |  Dashboard
+                                li
+                                    a
+                                        i.fa.fa-briefcase
+                                        |  Stuff
+                                        span.fa.fa-chevron-down
+                                    ul.nav.child_menu
+                                        li
+                                            a(href='jobs.html') Jobs
+                                        li
+                                            a(href='employees.html') Employees
+                                li
+                                    a(href='clients.html')
+                                        i.fa.fa-user
+                                        |  Clients
+                                li
+                                    a(href='deliveries.html')
+                                        i.fa.fa-gift
+                                        |  Deliveries
+                                li
+                                    a(href='suppliers.html')
+                                        i.fa.fa-car
+                                        |  Suppliers
+                                li
+                                    a
+                                        i.fa.fa-cutlery
+                                        | Food
+                                        span.fa.fa-chevron-down
+                                    ul.nav.child_menu
+                                        li
+                                            a(href='menu.html') Menu
+                                        li
+                                            a(href='categories.html') Categories
+                                        li
+                                            a(href='storage.html') Storage
+                        .menu_section
+                            h3 Owner pages
+                            ul.nav.side-menu
+                                li
+                                    a(href='reports.html')
+                                        i.fa.fa-file-o
+                                        |  Reports
+                                li
+                                    a(href='users.html')
+                                        i.fa.fa-users
+                                        |  Users
+                                li
+                                    a(href='roles.html')
+                                        i.fa.fa-tasks
+                                        |  Roles
+            // top navigation
+            .top_nav
+                .nav_menu
+                    nav
+                        .nav.toggle
+                            a#menu_toggle
+                                i.fa.fa-bars
+            // page content
+            .right_col(role='main')
+                div
+                    // Content goes here
+                    .page-title
+                        .title_left
+                            h3 Clients
+                    .clearfix
+                    .row
+                        .col-md-12.col-sm-12.col-xs-12
+                            .clearfix
+                            table#datatable.table.table-striped.table-bordered
+                                thead
+                                    tr
+                                        th id
+                                        th Email
+                                        th Photo
+                                        th Username
+                                        th Name
+                                        th Phone
+                                        th Address
+                                        th Birth date
+                                tbody
+                                    tr
+                                        td 1
+                                        td abcdas@mail.com
+                                        td
+                                            img.img-client(src='images/clients/client-1.jpg', alt='')
+                                        td user58a4sd54
+                                        td Johanne Mario
+                                        td 565944515
+                                        td London,Down street,82
+                                        td 1991/04/25
+                                    tr
+                                        td 2
+                                        td pretty@mail.com
+                                        td
+                                            img.img-client(src='images/clients/client-2.jpg', alt='')
+                                        td bartd4
+                                        td Barbara Stone
+                                        td 8484844
+                                        td Los Angelos, 58th Avenue, 14, app 85
+                                        td 1988/07/10
+                                    tr
+                                        td 3
+                                        td lucas@mail.com
+                                        td
+                                            img.img-client(src='images/clients/client-3.jpg', alt='')
+                                        td ussdfsd54
+                                        td Lucas JP
+                                        td 44599848
+                                        td Paris,adsasda street,844
+                                        td 1990/09/05
+                                    tr
+                                        td 4
+                                        td abcdas@mail.com
+                                        td
+                                            img.img-client(src='images/clients/client-1.jpg', alt='')
+                                        td user58a4sd54
+                                        td Johanne Mario
+                                        td 565944515
+                                        td London,Down street,82
+                                        td 1991/04/25
+                                    tr
+                                        td 5
+                                        td pretty@mail.com
+                                        td
+                                            img.img-client(src='images/clients/client-2.jpg', alt='')
+                                        td bartd4
+                                        td Barbara Stone
+                                        td 8484844
+                                        td Los Angelos, 58th Avenue, 14, app 85
+                                        td 1988/07/10
+                                    tr
+                                        td 6
+                                        td lucas@mail.com
+                                        td
+                                            img.img-client(src='images/clients/client-3.jpg', alt='')
+                                        td ussdfsd54
+                                        td Lucas JP
+                                        td 44599848
+                                        td Paris,adsasda street,844
+                                        td 1990/09/05
+                                    tr
+                                        td 7
+                                        td abcdas@mail.com
+                                        td
+                                            img.img-client(src='images/clients/client-1.jpg', alt='')
+                                        td user58a4sd54
+                                        td Johanne Mario
+                                        td 565944515
+                                        td London,Down street,82
+                                        td 1991/04/25
+                                    tr
+                                        td 8
+                                        td pretty@mail.com
+                                        td
+                                            img.img-client(src='images/clients/client-2.jpg', alt='')
+                                        td bartd4
+                                        td Barbara Stone
+                                        td 8484844
+                                        td Los Angelos, 58th Avenue, 14, app 85
+                                        td 1988/07/10
+                                    tr
+                                        td 9
+                                        td lucas@mail.com
+                                        td
+                                            img.img-client(src='images/clients/client-3.jpg', alt='')
+                                        td ussdfsd54
+                                        td Lucas JP
+                                        td 44599848
+                                        td Paris,adsasda street,844
+                                        td 1990/09/05
+                                    tr
+                                        td 10
+                                        td abcdas@mail.com
+                                        td
+                                            img.img-client(src='images/clients/client-1.jpg', alt='')
+                                        td user58a4sd54
+                                        td Johanne Mario
+                                        td 565944515
+                                        td London,Down street,82
+                                        td 1991/04/25
+                                    tr
+                                        td 11
+                                        td pretty@mail.com
+                                        td
+                                            img.img-client(src='images/clients/client-2.jpg', alt='')
+                                        td bartd4
+                                        td Barbara Stone
+                                        td 8484844
+                                        td Los Angelos, 58th Avenue, 14, app 85
+                                        td 1988/07/10
+                                    tr
+                                        td 12
+                                        td lucas@mail.com
+                                        td
+                                            img.img-client(src='images/clients/client-3.jpg', alt='')
+                                        td ussdfsd54
+                                        td Lucas JP
+                                        td 44599848
+                                        td Paris,adsasda street,844
+                                        td 1990/09/05
+                                    tr
+                                        td 13
+                                        td lucas@mail.com
+                                        td
+                                            img.img-client(src='images/clients/client-3.jpg', alt='')
+                                        td ussdfsd54
+                                        td Lucas JP
+                                        td 44599848
+                                        td Paris,adsasda street,844
+                                        td 1990/09/05
+                                    tr
+                                        td 14
+                                        td abcdas@mail.com
+                                        td
+                                            img.img-client(src='images/clients/client-1.jpg', alt='')
+                                        td user58a4sd54
+                                        td Johanne Mario
+                                        td 565944515
+                                        td London,Down street,82
+                                        td 1991/04/25
+                                    tr
+                                        td 15
+                                        td pretty@mail.com
+                                        td
+                                            img.img-client(src='images/clients/client-2.jpg', alt='')
+                                        td bartd4
+                                        td Barbara Stone
+                                        td 8484844
+                                        td Los Angelos, 58th Avenue, 14, app 85
+                                        td 1988/07/10
+                                    tr
+                                        td 16
+                                        td lucas@mail.com
+                                        td
+                                            img.img-client(src='images/clients/client-3.jpg', alt='')
+                                        td ussdfsd54
+                                        td Lucas JP
+                                        td 44599848
+                                        td Paris,adsasda street,844
+                                        td 1990/09/05
+                                    tr
+                                        td 17
+                                        td abcdas@mail.com
+                                        td
+                                            img.img-client(src='images/clients/client-1.jpg', alt='')
+                                        td user58a4sd54
+                                        td Johanne Mario
+                                        td 565944515
+                                        td London,Down street,82
+                                        td 1991/04/25
+                                    tr
+                                        td 18
+                                        td pretty@mail.com
+                                        td
+                                            img.img-client(src='images/clients/client-2.jpg', alt='')
+                                        td bartd4
+                                        td Barbara Stone
+                                        td 8484844
+                                        td Los Angelos, 58th Avenue, 14, app 85
+                                        td 1988/07/10
+                                    tr
+                                        td 19
+                                        td lucas@mail.com
+                                        td
+                                            img.img-client(src='images/clients/client-3.jpg', alt='')
+                                        td ussdfsd54
+                                        td Lucas JP
+                                        td 44599848
+                                        td Paris,adsasda street,844
+                                        td 1990/09/05
+                                    tr
+                                        td 20
+                                        td abcdas@mail.com
+                                        td
+                                            img.img-client(src='images/clients/client-1.jpg', alt='')
+                                        td user58a4sd54
+                                        td Johanne Mario
+                                        td 565944515
+                                        td London,Down street,82
+                                        td 1991/04/25
+                                    tr
+                                        td 21
+                                        td pretty@mail.com
+                                        td
+                                            img.img-client(src='images/clients/client-2.jpg', alt='')
+                                        td bartd4
+                                        td Barbara Stone
+                                        td 8484844
+                                        td Los Angelos, 58th Avenue, 14, app 85
+                                        td 1988/07/10
+                                    tr
+                                        td 22
+                                        td lucas@mail.com
+                                        td
+                                            img.img-client(src='images/clients/client-3.jpg', alt='')
+                                        td ussdfsd54
+                                        td Lucas JP
+                                        td 44599848
+                                        td Paris,adsasda street,844
+                                        td 1990/09/05
+                                    tr
+                                        td 23
+                                        td lucas@mail.com
+                                        td
+                                            img.img-client(src='images/clients/client-3.jpg', alt='')
+                                        td ussdfsd54
+                                        td Lucas JP
+                                        td 44599848
+                                        td Paris,adsasda street,844
+                                        td 1990/09/05
+                                    tr
+                                        td 24
+                                        td abcdas@mail.com
+                                        td
+                                            img.img-client(src='images/clients/client-1.jpg', alt='')
+                                        td user58a4sd54
+                                        td Johanne Mario
+                                        td 565944515
+                                        td London,Down street,82
+                                        td 1991/04/25
+                                    tr
+                                        td 25
+                                        td pretty@mail.com
+                                        td
+                                            img.img-client(src='images/clients/client-2.jpg', alt='')
+                                        td bartd4
+                                        td Barbara Stone
+                                        td 8484844
+                                        td Los Angelos, 58th Avenue, 14, app 85
+                                        td 1988/07/10
+                                    tr
+                                        td 26
+                                        td lucas@mail.com
+                                        td
+                                            img.img-client(src='images/clients/client-3.jpg', alt='')
+                                        td ussdfsd54
+                                        td Lucas JP
+                                        td 44599848
+                                        td Paris,adsasda street,844
+                                        td 1990/09/05
+                                    tr
+                                        td 27
+                                        td abcdas@mail.com
+                                        td
+                                            img.img-client(src='images/clients/client-1.jpg', alt='')
+                                        td user58a4sd54
+                                        td Johanne Mario
+                                        td 565944515
+                                        td London,Down street,82
+                                        td 1991/04/25
+                                    tr
+                                        td
+                                            | 28td>
+                                        td pretty@mail.com
+                                        td
+                                            img.img-client(src='images/clients/client-2.jpg', alt='')
+                                        td bartd4
+                                        td Barbara Stone
+                                        td 8484844
+                                        td Los Angelos, 58th Avenue, 14, app 85
+                                        td 1988/07/10
+                                    tr
+                                        td 29
+                                        td lucas@mail.com
+                                        td
+                                            img.img-client(src='images/clients/client-3.jpg', alt='')
+                                        td ussdfsd54
+                                        td Lucas JP
+                                        td 44599848
+                                        td Paris,adsasda street,844
+                                        td 1990/09/05
+                                    tr
+                                        td 30
+                                        td abcdas@mail.com
+                                        td
+                                            img.img-client(src='images/clients/client-1.jpg', alt='')
+                                        td user58a4sd54
+                                        td Johanne Mario
+                                        td 565944515
+                                        td London,Down street,82
+                                        td 1991/04/25
+                                    tr
+                                        td 31
+                                        td pretty@mail.com
+                                        td
+                                            img.img-client(src='images/clients/client-2.jpg', alt='')
+                                        td bartd4
+                                        td Barbara Stone
+                                        td 8484844
+                                        td Los Angelos, 58th Avenue, 14, app 85
+                                        td 1988/07/10
+                                    tr
+                                        td 32
+                                        td lucas@mail.com
+                                        td
+                                            img.img-client(src='images/clients/client-3.jpg', alt='')
+                                        td ussdfsd54
+                                        td Lucas JP
+                                        td 44599848
+                                        td Paris,adsasda street,844
+                                        td 1990/09/05
+                                    tr
+                                        td 33
+                                        td lucas@mail.com
+                                        td
+                                            img.img-client(src='images/clients/client-3.jpg', alt='')
+                                        td ussdfsd54
+                                        td Lucas JP
+                                        td 44599848
+                                        td Paris,adsasda street,844
+                                        td 1990/09/05
+                                    tr
+                                        td 34
+                                        td abcdas@mail.com
+                                        td
+                                            img.img-client(src='images/clients/client-1.jpg', alt='')
+                                        td user58a4sd54
+                                        td Johanne Mario
+                                        td 565944515
+                                        td London,Down street,82
+                                        td 1991/04/25
+                                    tr
+                                        td 35
+                                        td pretty@mail.com
+                                        td
+                                            img.img-client(src='images/clients/client-2.jpg', alt='')
+                                        td bartd4
+                                        td Barbara Stone
+                                        td 8484844
+                                        td Los Angelos, 58th Avenue, 14, app 85
+                                        td 1988/07/10
+                                    tr
+                                        td 36
+                                        td lucas@mail.com
+                                        td
+                                            img.img-client(src='images/clients/client-3.jpg', alt='')
+                                        td ussdfsd54
+                                        td Lucas JP
+                                        td 44599848
+                                        td Paris,adsasda street,844
+                                        td 1990/09/05
+                                    tr
+                                        td 37
+                                        td abcdas@mail.com
+                                        td
+                                            img.img-client(src='images/clients/client-1.jpg', alt='')
+                                        td user58a4sd54
+                                        td Johanne Mario
+                                        td 565944515
+                                        td London,Down street,82
+                                        td 1991/04/25
+                                    tr
+                                        td 38
+                                        td pretty@mail.com
+                                        td
+                                            img.img-client(src='images/clients/client-2.jpg', alt='')
+                                        td bartd4
+                                        td Barbara Stone
+                                        td 8484844
+                                        td Los Angelos, 58th Avenue, 14, app 85
+                                        td 1988/07/10
+                                    tr
+                                        td 39
+                                        td lucas@mail.com
+                                        td
+                                            img.img-client(src='images/clients/client-3.jpg', alt='')
+                                        td ussdfsd54
+                                        td Lucas JP
+                                        td 44599848
+                                        td Paris,adsasda street,844
+                                        td 1990/09/05
+                                    tr
+                                        td 40
+                                        td abcdas@mail.com
+                                        td
+                                            img.img-client(src='images/clients/client-1.jpg', alt='')
+                                        td user58a4sd54
+                                        td Johanne Mario
+                                        td 565944515
+                                        td London,Down street,82
+                                        td 1991/04/25
+                                    tr
+                                        td 41
+                                        td pretty@mail.com
+                                        td
+                                            img.img-client(src='images/clients/client-2.jpg', alt='')
+                                        td bartd4
+                                        td Barbara Stone
+                                        td 8484844
+                                        td Los Angelos, 58th Avenue, 14, app 85
+                                        td 1988/07/10
+                                    tr
+                                        td 42
+                                        td lucas@mail.com
+                                        td
+                                            img.img-client(src='images/clients/client-3.jpg', alt='')
+                                        td ussdfsd54
+                                        td Lucas JP
+                                        td 44599848
+                                        td Paris,adsasda street,844
+                                        td 1990/09/05

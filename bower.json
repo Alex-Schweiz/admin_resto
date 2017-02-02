@@ -1,0 +1,46 @@
+{
+  "name": "resto_admin",
+  "homepage": "https://github.com/Alex_Schweiz/",
+  "authors": "Alex Skibinskiy",
+  "description": "Alex Restaurant Admin",
+  "keywords": [
+    "css",
+    "js",
+    "html",
+    "admin",
+    "bootstrap",
+    "responsive"
+  ],
+  "license": "MIT",
+  "ignore": "documentation",
+  "devDependencies": {
+    "jquery": "^3.1.0",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "fontawesome#^4.6.1",
+    "fastclick": "^1.0.6",
+    "nprogress": "^0.2.0",
+    "Flot": "flot#^0.8.3",
+    "normalize-css": "^4.1.1",
+    "datatables.net": "^1.10.11",
+    "datatables.net-bs": "^1.10.11",
+    "datatables.net-buttons": "^1.1.2",
+    "datatables.net-buttons-bs": "^1.1.2",
+    "datatables.net-fixedheader": "^3.1.1",
+    "datatables.net-fixedheader-bs": "^3.1.1",
+    "datatables.net-keytable": "^2.1.1",
+    "datatables.net-responsive": "^2.0.2",
+    "datatables.net-responsive-bs": "^2.0.2",
+    "datatables.net-scroller": "^1.4.1",
+    "datatables.net-scroller-bs": "^1.4.1",
+    "pdfmake": "^0.1.20",
+    "jszip": "Stuk/jszip#v2.6.0",
+    "jqvmap": "https://github.com/christianesperar/jqvmap.git#master",
+    "DateJS": "^1.0.0-rc3",
+    "flot.curvedlines": "^1.1.1",
+    "flot.orderbars": "*",
+    "flot-spline": "^0.8.2"
+  },
+  "dependencies": {
+    "nprogress": "^0.2.0"
+  }
+}

@@ -1,0 +1,31 @@
+.employee-card {
+    margin-top: 30px;
+    margin-bottom: 60px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 5px 5px 13px #777;
+}
+
+.employee-card img {
+    padding-top: 30px;
+    margin: 0 auto;
+    width: 55%;
+}
+
+.employee-card h4 {
+    font-size: 32px;
+}
+
+.employee-card h5 {
+    font-size: 20px;
+}
+
+.employee-card p {
+    padding: 10px;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.img-client {
+    width: 120px;
+}

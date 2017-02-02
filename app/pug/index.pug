@@ -1,0 +1,157 @@
+extends layouts/main
+
+block content
+    .container.body
+        .main_container
+            .col-md-3.left_col
+                .left_col.scroll-view
+                    .navbar.nav_title
+                        a.site_title(href='index.html')
+                            i.fa.fa-asterisk
+                            span Resto Admin
+                    .clearfix
+                    // menu profile quick info
+                    .profile
+                        .profile_pic
+                            img.img-circle.profile_img(src='images/img.jpg', alt='user_name')
+                        .profile_info
+                            span Welcome,
+                            h2 John Doe
+                    br
+                    // sidebar menu
+                    #sidebar-menu.main_menu_side.hidden-print.main_menu
+                        .menu_section
+                            h3 General
+                            ul.nav.side-menu
+                                li
+                                    a(href='index.html')
+                                        i.fa.fa-home
+                                        |  Dashboard
+                                li
+                                    a
+                                        i.fa.fa-briefcase
+                                        |  Stuff
+                                        span.fa.fa-chevron-down
+                                    ul.nav.child_menu
+                                        li
+                                            a(href='jobs.html') Jobs
+                                        li
+                                            a(href='employees.html') Employees
+                                li
+                                    a(href='clients.html')
+                                        i.fa.fa-user
+                                        |  Clients
+                                li
+                                    a(href='deliveries.html')
+                                        i.fa.fa-gift
+                                        |  Deliveries
+                                li
+                                    a(href='suppliers.html')
+                                        i.fa.fa-car
+                                        |  Suppliers
+                                li
+                                    a
+                                        i.fa.fa-cutlery
+                                        | Food
+                                        span.fa.fa-chevron-down
+                                    ul.nav.child_menu
+                                        li
+                                            a(href='menu.html') Menu
+                                        li
+                                            a(href='categories.html') Categories
+                                        li
+                                            a(href='storage.html') Storage
+                        .menu_section
+                            h3 Owner pages
+                            ul.nav.side-menu
+                                li
+                                    a(href='reports.html')
+                                        i.fa.fa-file-o
+                                        |  Reports
+                                li
+                                    a(href='users.html')
+                                        i.fa.fa-users
+                                        |  Users
+                                li
+                                    a(href='roles.html')
+                                        i.fa.fa-tasks
+                                        |  Roles
+            // top navigation
+            .top_nav
+                .nav_menu
+                    nav
+                        .nav.toggle
+                            a#menu_toggle
+                                i.fa.fa-bars
+            // page content
+            .right_col(role='main')
+                // This month statistics
+                .page-title
+                    .title_left
+                        h3 This Month
+                .clearfix
+                .row.top_tiles
+                    .animated.flipInY.col-lg-3.col-md-3.col-sm-6.col-xs-12
+                        .tile-stats
+                            .icon
+                                i.fa.fa-user
+                            .count 20
+                            h3 New users
+                            p Lorem ipsum psdea itgum rixt.
+                    .animated.flipInY.col-lg-3.col-md-3.col-sm-6.col-xs-12
+                        .tile-stats
+                            .icon
+                                i.fa.fa-gift
+                            .count 54
+                            h3 New Deliveries
+                            p Lorem ipsum psdea itgum rixt.
+                    .animated.flipInY.col-lg-3.col-md-3.col-sm-6.col-xs-12
+                        .tile-stats
+                            .icon
+                                i.fa.fa-dollar
+                            .count $24 589.12
+                            h3 Sales
+                            p Lorem ipsum psdea itgum rixt.
+                    .animated.flipInY.col-lg-3.col-md-3.col-sm-6.col-xs-12
+                        .tile-stats
+                            .icon
+                                i.fa.fa-internet-explorer
+                            .count 1 709
+                            h3 Site visitors
+                            p Lorem ipsum psdea itgum rixt.
+                // This year statistics
+                .page-title
+                    .title_left
+                        h3 This Year
+                .clearfix
+                .row.top_tiles
+                    .animated.flipInY.col-lg-3.col-md-3.col-sm-6.col-xs-12
+                        .tile-stats
+                            .icon
+                                i.fa.fa-user
+                            .count 785
+                            h3 New users
+                            p Lorem ipsum psdea itgum rixt.
+                    .animated.flipInY.col-lg-3.col-md-3.col-sm-6.col-xs-12
+                        .tile-stats
+                            .icon
+                                i.fa.fa-gift
+                            .count 1 347
+                            h3 New Deliveries
+                            p Lorem ipsum psdea itgum rixt.
+                    .animated.flipInY.col-lg-3.col-md-3.col-sm-6.col-xs-12
+                        .tile-stats
+                            .icon
+                                i.fa.fa-dollar
+                            .count $392 142.57
+                            h3 Sales
+                            p Lorem ipsum psdea itgum rixt.
+                    .animated.flipInY.col-lg-3.col-md-3.col-sm-6.col-xs-12
+                        .tile-stats
+                            .icon
+                                i.fa.fa-internet-explorer
+                            .count 69 145
+                            h3 Site visitors
+                            p Lorem ipsum psdea itgum rixt.
+                .demo-container(style='height:290px; margin-top: 150px;')
+                    #placeholder33x.demo-placeholder

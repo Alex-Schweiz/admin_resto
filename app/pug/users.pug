@@ -1,0 +1,180 @@
+extends layouts/main
+
+block content
+    .container.body
+        .main_container
+            .col-md-3.left_col
+                .left_col.scroll-view
+                    .navbar.nav_title
+                        a.site_title(href='index.html')
+                            i.fa.fa-asterisk
+                            span Resto Admin
+                    .clearfix
+                    // menu profile quick info
+                    .profile
+                        .profile_pic
+                            img.img-circle.profile_img(src='images/img.jpg', alt='...')
+                        .profile_info
+                            span Welcome,
+                            h2 John Doe
+                    // /menu profile quick info
+                    br
+                    // sidebar menu
+                    #sidebar-menu.main_menu_side.hidden-print.main_menu
+                        .menu_section
+                            h3 General
+                            ul.nav.side-menu
+                                li
+                                    a(href='index.html')
+                                        i.fa.fa-home
+                                        |  Dashboard
+                                li
+                                    a
+                                        i.fa.fa-briefcase
+                                        |  Stuff
+                                        span.fa.fa-chevron-down
+                                    ul.nav.child_menu
+                                        li
+                                            a(href='jobs.html') Jobs
+                                        li
+                                            a(href='employees.html') Employees
+                                li
+                                    a(href='clients.html')
+                                        i.fa.fa-user
+                                        |  Clients
+                                li
+                                    a(href='deliveries.html')
+                                        i.fa.fa-gift
+                                        |  Deliveries
+                                li
+                                    a(href='suppliers.html')
+                                        i.fa.fa-car
+                                        |  Suppliers
+                                li
+                                    a
+                                        i.fa.fa-cutlery
+                                        | Food
+                                        span.fa.fa-chevron-down
+                                    ul.nav.child_menu
+                                        li
+                                            a(href='menu.html') Menu
+                                        li
+                                            a(href='categories.html') Categories
+                                        li
+                                            a(href='storage.html') Storage
+                        .menu_section
+                            h3 Owner pages
+                            ul.nav.side-menu
+                                li
+                                    a(href='reports.html')
+                                        i.fa.fa-file-o
+                                        |  Reports
+                                li
+                                    a(href='users.html')
+                                        i.fa.fa-users
+                                        |  Users
+                                li
+                                    a(href='roles.html')
+                                        i.fa.fa-tasks
+                                        |  Roles
+            // top navigation
+            .top_nav
+                .nav_menu
+                    nav
+                        .nav.toggle
+                            a#menu_toggle
+                                i.fa.fa-bars
+            // page content
+            .right_col(role='main')
+                div
+                    // Content goes here
+                    .page-title
+                        .title_left
+                            h3 Users
+                    .clearfix
+                    .row
+                        .col-md-6
+                            .clearfix
+                        .col-md-12
+                            table.table.table-bordered
+                                thead
+                                    tr
+                                        th id
+                                        th Email
+                                        th Photo
+                                        th Username
+                                        th Name
+                                        th Phone
+                                        th Role
+                                        th Birth date
+                                tbody
+                                    tr
+                                        td 1
+                                        td abcdas@mail.com
+                                        td
+                                            img.img-client(src='images/clients/client-1.jpg', alt='')
+                                        td user58a4sd54
+                                        td Johanne Mario
+                                        td 565944515
+                                        td Cook
+                                        td 1991/04/25
+                                    tr
+                                        td 2
+                                        td abcdas@mail.com
+                                        td
+                                            img.img-client(src='images/clients/client-2.jpg', alt='')
+                                        td user58a4sd54
+                                        td Johanne Mario
+                                        td 565944515
+                                        td Cook
+                                        td 1991/04/25
+                                    tr
+                                        td 3
+                                        td abcdas@mail.com
+                                        td
+                                            img.img-client(src='images/clients/client-3.jpg', alt='')
+                                        td user58a4sd54
+                                        td Johanne Mario
+                                        td 565944515
+                                        td Dishwasher
+                                        td 1991/04/25
+                                    tr
+                                        td 4
+                                        td abcdas@mail.com
+                                        td
+                                            img.img-client(src='images/clients/client-1.jpg', alt='')
+                                        td user58a4sd54
+                                        td Johanne Mario
+                                        td 565944515
+                                        td Chef
+                                        td 1991/04/25
+                                    tr
+                                        td 5
+                                        td abcdas@mail.com
+                                        td
+                                            img.img-client(src='images/clients/client-2.jpg', alt='')
+                                        td user58a4sd54
+                                        td Johanne Mario
+                                        td 565944515
+                                        td Cook
+                                        td 1991/04/25
+                                    tr
+                                        td 6
+                                        td abcdas@mail.com
+                                        td
+                                            img.img-client(src='images/clients/client-3.jpg', alt='')
+                                        td user58a4sd54
+                                        td Johanne Mario
+                                        td 565944515
+                                        td Cook
+                                        td 1991/04/25
+                                    tr
+                                        td 7
+                                        td abcdas@mail.com
+                                        td
+                                            img.img-client(src='images/clients/client-2.jpg', alt='')
+                                        td user58a4sd54
+                                        td Johanne Mario
+                                        td 565944515
+                                        td Cook
+                                        td 1991/04/25
